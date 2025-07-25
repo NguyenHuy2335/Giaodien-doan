@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký | TechMart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Phần nội dung đăng ký -->
+    <main class="auth-container">
+        <div class="auth-form">
+            <h1>Tạo tài khoản</h1>
+            <p class="auth-subtitle">Tham gia cùng chúng tôi và khám phá nhiều ưu đãi hấp dẫn</p>
+            
+            <form class="auth-form-content">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname" placeholder="Nhập họ và tên" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Nhập email của bạn" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" placeholder="Tạo mật khẩu" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Xác nhận mật khẩu</label>
+                    <input type="password" id="confirm-password" placeholder="Nhập lại mật khẩu" required>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agree-terms" required>
+                    <label for="agree-terms">Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a></label>
+                </div>
+                
+                <button type="submit" class="btn btn-auth">Đăng ký</button>
+                
+                <p class="auth-switch">
+                    Đã có tài khoản? <a href="login.html">Đăng nhập ngay</a>
+                </p>
+            </form>
+        </div>
+        
+    </main>
+
+
+
+    <script src="assets/js/auth.js"></script>
+    <script>
+    window.addEventListener('popstate', function() {
+        window.location.href = "index.html";
+    });
+    </script>
+</body>
+</html>

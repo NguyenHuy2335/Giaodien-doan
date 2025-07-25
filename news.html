@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMart | Tin Tức</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header mới với thanh tìm kiếm -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="welcome-msg">Chào mừng đến với TechMart!</div>
+                <div class="top-links">
+                    <a href="login.html"><i class="fas fa-user"></i> Đăng nhập</a>
+                    <a href="register.html"><i class="fas fa-user-plus"></i> Đăng ký</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+            <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+                <!-- Công nghệ: icon chip + tên TechMart -->
+                <i class="fas fa-microchip" style="font-size: 2rem; color: #007bff;"></i>
+                <span style="font-size: 1.6rem; font-weight: bold; color: #222;">TechMart</span>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-icons">
+                <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+                </a>
+            </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html" ><i class="fas fa-home"></i> Trang chủ</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+                    <li><a href="products.html"><i class="fas fa-box-open"></i> Sản phẩm</a></li>
+                    <li><a href="news.html" class="active"><i class="fas fa-newspaper"></i> Tin tức</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+                    <li><a href="policy.html"><i class="fas fa-undo"></i> Chính sách</a></li>                
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="news-main container">
+        <h1>Tin tức công nghệ mới nhất</h1>
+        <section class="news-list" style="display: flex; flex-direction: column; gap: 32px;">
+            <article class="news-item" style="display: flex; gap: 24px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden;">
+            <div style="flex: 0 0 260px; display: flex; align-items: center; justify-content: center; background: #f5f5f5;">
+                <img src="assets/images/ai.jpg" alt="AI phát triển vượt bậc" style="width: 240px; height: 160px; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="news-content" style="padding: 20px 0;">
+                <h2 style="margin: 0 0 10px 0;"><a href="#" style="color: #4B0082; text-decoration: none; font-weight: bold;">AI phát triển vượt bậc trong năm 2024</a></h2>
+                <p style="margin-bottom: 12px;">Các công nghệ trí tuệ nhân tạo đang thay đổi cách chúng ta sống và làm việc. Nhiều ứng dụng mới đã xuất hiện, giúp tối ưu hóa hiệu suất và trải nghiệm người dùng.</p>
+                <span class="news-date" style="color: #888;"><i class="fas fa-calendar-alt"></i> 10/06/2025</span>
+            </div>
+            </article>
+            <article class="news-item" style="display: flex; gap: 24px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden;">
+            <div style="flex: 0 0 260px; display: flex; align-items: center; justify-content: center; background: #f5f5f5;">
+                <img src="assets/images/flagship.jpg" alt="Smartphone mới ra mắt" style="width: 240px; height: 160px; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="news-content" style="padding: 20px 0;">
+                <h2 style="margin: 0 0 10px 0;"><a href="#" style="color: #4B0082; text-decoration: none; font-weight: bold;">Smartphone flagship mới ra mắt với nhiều tính năng đột phá</a></h2>
+                <p style="margin-bottom: 12px;">Các hãng điện thoại lớn vừa giới thiệu dòng sản phẩm mới với camera siêu nét, pin lâu và thiết kế sang trọng, hứa hẹn tạo nên cơn sốt trên thị trường.</p>
+                <span class="news-date" style="color: #888;"><i class="fas fa-calendar-alt"></i> 08/06/2025</span>
+            </div>
+            </article>
+            <article class="news-item" style="display: flex; gap: 24px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden;">
+            <div style="flex: 0 0 260px; display: flex; align-items: center; justify-content: center; background: #f5f5f5;">
+                <img src="assets/images/gaming.jpg" alt="Laptop gaming" style="width: 240px; height: 160px; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="news-content" style="padding: 20px 0;">
+                <h2 style="margin: 0 0 10px 0;"><a href="#" style="color: #4B0082; text-decoration: none; font-weight: bold;">Laptop gaming 2024: Hiệu năng vượt trội, giá hợp lý</a></h2>
+                <p style="margin-bottom: 12px;">Các mẫu laptop gaming mới nhất được trang bị chip xử lý mạnh mẽ, card đồ họa rời và màn hình tần số quét cao, đáp ứng nhu cầu giải trí và làm việc.</p>
+                <span class="news-date" style="color: #888;"><i class="fas fa-calendar-alt"></i> 05/06/2025</span>
+            </div>
+            </article>
+            <article class="news-item" style="display: flex; gap: 24px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden;">
+            <div style="flex: 0 0 260px; display: flex; align-items: center; justify-content: center; background: #f5f5f5;">
+                <img src="assets/images/oit.jpg" alt="Xu hướng IoT 2024" style="width: 240px; height: 160px; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="news-content" style="padding: 20px 0;">
+                <h2 style="margin: 0 0 10px 0;"><a href="#" style="color: #4B0082; text-decoration: none; font-weight: bold;">Xu hướng IoT: Kết nối mọi thứ trong kỷ nguyên số</a></h2>
+                <p style="margin-bottom: 12px;">Internet of Things tiếp tục phát triển mạnh mẽ, mang lại giải pháp thông minh cho nhà ở, thành phố và doanh nghiệp, giúp tối ưu hóa quản lý và tiết kiệm chi phí.</p>
+                <span class="news-date" style="color: #888;"><i class="fas fa-calendar-alt"></i> 03/06/2025</span>
+            </div>
+            </article>
+        </section>
+        <div style="text-align: center; margin-top: 32px;">
+            <a href="#" style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 16px;
+                color: #fff;
+                background: linear-gradient(90deg, #4B0082 0%, #007bff 100%);
+                padding: 10px 36px;
+                border-radius: 24px;
+                text-decoration: none;
+                border: none;
+                font-weight: 600;
+                box-shadow: 0 2px 8px rgba(75,0,130,0.08);
+                transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+                letter-spacing: 0.5px;
+            " onmouseover="this.style.background='linear-gradient(90deg,#007bff 0%,#4B0082 100%)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 16px rgba(0,123,255,0.12)';"
+            onmouseout="this.style.background='linear-gradient(90deg, #4B0082 0%, #007bff 100%)';this.style.transform='none';this.style.boxShadow='0 2px 8px rgba(75,0,130,0.08)';">
+                <span>Xem thêm</span>
+                <i class="fas fa-angle-double-right" style="font-size: 18px;"></i>
+            </a>
+        </div>
+    </main>
+</body>
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-col">
+                    <h3>Về chúng tôi</h3>
+                    <p>TechMart - Địa chỉ mua sắm công nghệ tin cậy</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên kết</h3>
+                    <ul>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="policy.html">Chính sách</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Vận chuyển</a></li>
+                        <li><a href="return.html">Đổi trả</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Đường Phan Văn Trị, Tp.Hồ Chí Minh</p>
+                    <p><i class="fas fa-phone"></i> 0123.456.789</p>
+                    <p><i class="fas fa-envelope"></i> info@techmart.vn</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TechMart. Bảo lưu mọi quyền.</p>
+
+            </div>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMart | Trang Chủ</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header mới với thanh tìm kiếm -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="welcome-msg">Chào mừng đến với TechMart!</div>
+                <div class="top-links">
+                    <a href="login.html"><i class="fas fa-user"></i> Đăng nhập</a>
+                    <a href="register.html"><i class="fas fa-user-plus"></i> Đăng ký</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-header">
+            <div class="container">
+            <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+                <!-- Công nghệ: icon chip + tên TechMart -->
+                <i class="fas fa-microchip" style="font-size: 2rem; color: #007bff;"></i>
+                <span style="font-size: 1.6rem; font-weight: bold; color: #222;">TechMart</span>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-icons">
+                <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+                </a>
+            </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Trang chủ</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+                    <li><a href="products.html"><i class="fas fa-box-open"></i> Sản phẩm</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> Tin tức</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+                    <li><a href="policy.html"><i class="fas fa-undo"></i> Chính sách</a></li>               
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slide active">
+            <img src="assets/images/back.jpg" alt="Khuyến mãi mùa hè">
+            <div class="slide-content">
+                <h2>Giảm giá đến 50%</h2>
+                <p>Mùa hè rực rỡ - Ưu đãi bất ngờ</p>
+                <a href="products.html" class="btn" style="padding: 12px 32px; background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%); color: #fff; border: none; border-radius: 32px; font-weight: 600; font-size: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.12); cursor: pointer; transition: background 0.3s, transform 0.2s; display: inline-block;">Mua ngay</a>
+            </div>
+        </div>
+    </section>
+    <!-- Thêm sau section Hero Slider -->
+<section class="features-section">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Miễn phí vận chuyển</h3>
+                <p>Cho đơn hàng từ 500.000đ</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-undo"></i>
+                <h3>Đổi trả 7 ngày</h3>
+                <p>Hoàn tiền 100%</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Thanh toán an toàn</h3>
+                <p>Bảo mật thông tin</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>Hỗ trợ 24/7</h3>
+                <p>Hotline: 0123.456.789</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Thêm section Danh mục sản phẩm -->
+<section class="categories-section">
+    <div class="container">
+        <h2 class="section-title"><span>Danh mục sản phẩm</span></h2>
+        <div class="categories-grid" style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+            <div class="category-card" style="flex: 0 1 200px; text-align: center; position: relative;">
+                <img src="assets/images/laptop2.webp" alt="Laptop" style="width:100%; height:auto;">
+                <h3>Laptop</h3>
+                <a href="products.html" class="view-more-btn" style="display: inline-block; margin-top: 10px; padding: 10px 24px; background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%); color: #fff; border: none; border-radius: 24px; font-weight: 600; font-size: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; transition: background 0.3s, transform 0.2s; text-decoration: none;">
+                    <i class="fas fa-eye"></i> Xem thêm
+                </a>
+            </div>
+            <div class="category-card" style="flex: 0 1 200px; text-align: center;">
+                <img src="assets/images/dienthoai.webp" alt="Smartphone" style="width:100%; height:auto;">
+                <h3>Smartphone</h3>
+                <a href="products.html" class="view-more-btn" style="display: inline-block; margin-top: 10px; padding: 10px 24px; background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%); color: #fff; border: none; border-radius: 24px; font-weight: 600; font-size: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; transition: background 0.3s, transform 0.2s; text-decoration: none;">
+                    <i class="fas fa-eye"></i> Xem thêm
+                </a>
+            </div>
+            <div class="category-card" style="flex: 0 1 200px; text-align: center;">
+                <img src="assets/images/table.webp" alt="Tablet" style="width:100%; height:auto;">
+                <h3>Tablet</h3>
+                <a href="products.html" class="view-more-btn" style="display: inline-block; margin-top: 10px; padding: 10px 24px; background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%); color: #fff; border: none; border-radius: 24px; font-weight: 600; font-size: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; transition: background 0.3s, transform 0.2s; text-decoration: none;">
+                    <i class="fas fa-eye"></i> Xem thêm
+                </a>
+            </div>
+            <div class="category-card" style="flex: 0 1 200px; text-align: center;">
+                <img src="assets/images/phukien.webp" alt="Phụ kiện" style="width:100%; height:auto;">
+                <h3>Phụ kiện</h3>
+                <a href="products.html" class="view-more-btn" style="display: inline-block; margin-top: 10px; padding: 10px 24px; background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%); color: #fff; border: none; border-radius: 24px; font-weight: 600; font-size: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; transition: background 0.3s, transform 0.2s; text-decoration: none;">
+                    <i class="fas fa-eye"></i> Xem thêm
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Thêm section Tin tức -->
+<section class="news-section">
+    <div class="container">
+        <h2 class="section-title"><span>Tin tức công nghệ</span></h2>
+        <div class="news-grid" style="display: flex; gap: 24px; flex-wrap: wrap;">
+            <div class="news-card" style="flex: 0 1 320px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;">
+                <div class="news-content" style="padding: 16px;">
+                    <h3>Công nghệ mới nhất 2023</h3>
+                    <p class="news-date">15/06/2023</p>
+                    <p class="news-excerpt">Tổng hợp những công nghệ đột phá trong năm 2023...</p>
+                    <a href="news-detail.html" class="read-more">Đọc thêm</a>
+                </div>
+            </div>
+            <div class="news-card" style="flex: 0 1 320px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;">
+                <div class="news-content" style="padding: 16px;">
+                    <h3>Samsung ra mắt Galaxy S23</h3>
+                    <p class="news-date">20/06/2023</p>
+                    <p class="news-excerpt">Samsung chính thức giới thiệu dòng Galaxy S23 với nhiều cải tiến vượt trội...</p>
+                    <a href="news-detail.html" class="read-more">Đọc thêm</a>
+                </div>
+            </div>
+            <div class="news-card" style="flex: 0 1 320px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;">
+                <div class="news-content" style="padding: 16px;">
+                    <h3>Apple trình làng iPhone 15</h3>
+                    <p class="news-date">25/06/2023</p>
+                    <p class="news-excerpt">Apple vừa ra mắt iPhone 15 với thiết kế mới và chip mạnh mẽ hơn...</p>
+                    <a href="news-detail.html" class="read-more">Đọc thêm</a>
+                </div>
+            </div>
+            <!-- Thêm các tin tức khác -->
+        </div>
+    </div>
+</section>
+
+</div>    <!-- Sản phẩm nổi bật -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title"><span>Sản phẩm nổi bật</span></h2>
+            <div class="product-grid" style="display: flex; gap: 24px; flex-wrap: wrap;">
+                <div class="product-card" style="flex: 0 1 320px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;">
+                    <div class="product-badge">Hot</div>
+                    <div class="product-image" style="width:100%; height:200px; display:flex; align-items:center; justify-content:center; background:#f5f5f5;">
+                        <img src="assets/images/laptop3.webp" alt="Laptop HP Gaming Victus 15-FA1139TX 8Y6W3PA" style="max-width:100%; max-height:100%; object-fit:contain;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop HP Gaming Victus 15-FA1139TX 8Y6W3PA</h3>
+                        <ul class="product-specs">
+        <li>Intel Core i5-12450H</li>
+        <li>RAM 8GB, SSD 512GB</li>
+        <li>RTX 3050 4GB</li>
+        <li>15.6" FHD 144Hz</li>
+        <li>Pin 70Wh, Win 11</li>
+    </ul>
+                        <div class="product-price">
+                            <span class="current-price">24.590.000đ</span>
+                            <span class="old-price">28.000.000đ</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" 
+                                data-id="1" 
+                                data-name="Laptop HP Gaming Victus 15-FA1139TX 8Y6W3PA" 
+                                data-price="24590000" 
+                                data-image="assets/images/laptop3.webp"
+                                data-desc="Intel Core i5-12450H, RAM 8GB, SSD 512GB, RTX 3050 4GB, 15.6' FHD 144Hz, Pin 70Wh, Win 11">
+                                Thêm vào giỏ
+                            </button>
+                            <button class="quick-view">Xem nhanh</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" style="flex: 0 1 320px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;">
+                    <div class="product-badge">Hot</div>
+                    <div class="product-image" style="width:100%; height:200px; display:flex; align-items:center; justify-content:center; background:#f5f5f5;">
+                        <img src="assets\images\laptop4.webp" alt="Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam" style="max-width:100%; max-height:100%; object-fit:contain;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam</h3>
+                        <ul class="product-specs">
+                            <li>Apple M1, 8 nhân CPU</li>
+                            <li>RAM 8GB, SSD 256GB</li>
+                            <li>13.3" Retina</li>
+                            <li>Pin 49.9Wh, macOS</li>
+                            <li>Chính hãng VN/A</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="current-price">15.990.000đ</span>
+                            <span class="old-price">22.990.000đ</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" 
+                                data-id="2" 
+                                data-name="Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam" 
+                                data-price="15990000" 
+                                data-image="assets/images/laptop4.webp"
+                                data-desc="Apple M1, RAM 8GB, SSD 256GB, 13.3' Retina, Pin 49.9Wh, macOS, Chính hãng VN/A">
+                                Thêm vào giỏ
+                            </button>
+                            <button class="quick-view">Xem nhanh</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" style="flex: 0 1 320px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden;">
+                    <div class="product-badge">Hot</div>
+                    <div class="product-image" style="width:100%; height:200px; display:flex; align-items:center; justify-content:center; background:#f5f5f5;">
+                        <img src="assets/images/laptop5.webp" alt="Laptop Acer Gaming Nitro Lite 16 NL16-71G-71UJ" style="max-width:100%; max-height:100%; object-fit:contain;">
+                    </div>
+                    <div class="product-info">
+                        <h3>Laptop Acer Gaming Nitro Lite 16 NL16-71G-71UJ</h3>
+                        <ul class="product-specs">
+                            <li>Intel Core i7-13620H</li>
+                            <li>RAM 16GB, SSD 512GB</li>
+                            <li>RTX 4050 6GB</li>
+                            <li>16" WUXGA 165Hz</li>
+                            <li>Pin 90Wh, Win 11</li>
+                        </ul>
+                        <div class="product-price">
+                            <span class="current-price">22.490.000đ</span>
+                            <span class="old-price">23.990.000đ</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" 
+                                data-id="3" 
+                                data-name="Laptop Acer Gaming Nitro Lite 16 NL16-71G-71UJ" 
+                                data-price="22490000" 
+                                data-image="assets/images/laptop5.webp"
+                                data-desc="Intel Core i7-13620H, RAM 16GB, SSD 512GB, RTX 4050 6GB, 16' WUXGA 165Hz, Pin 90Wh, Win 11">
+                                Thêm vào giỏ
+                            </button>
+                            <button class="quick-view">Xem nhanh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    // Thêm sản phẩm vào giỏ và chuyển sang cart.html
+    document.querySelectorAll('.add-to-cart').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const product = {
+                id: btn.getAttribute('data-id'),
+                name: btn.getAttribute('data-name'),
+                price: btn.getAttribute('data-price'),
+                img: btn.getAttribute('data-image'),
+                desc: btn.getAttribute('data-desc') || '', // Thêm dòng này nếu có mô tả
+                quantity: 1
+            };
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const idx = cart.findIndex(item => item.id === product.id);
+            if (idx > -1) {
+                cart[idx].quantity += 1;
+            } else {
+                cart.push(product);
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            window.location.href = 'cart.html';
+        });
+    });
+    </script>
+
+    <!-- Footer nâng cấp -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-col">
+                    <h3>Về chúng tôi</h3>
+                    <p>TechMart - Địa chỉ mua sắm công nghệ tin cậy</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên kết</h3>
+                    <ul>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="policy.html">Chính sách</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Vận chuyển</a></li>
+                        <li><a href="return.html">Đổi trả</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Đường Phan Văn Trị, Tp.Hồ Chí Minh</p>
+                    <p><i class="fas fa-phone"></i> 0123.456.789</p>
+                    <p><i class="fas fa-envelope"></i> info@techmart.vn</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TechMart. Bảo lưu mọi quyền.</p>
+
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
