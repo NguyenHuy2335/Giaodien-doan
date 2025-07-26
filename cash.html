@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - TechMart</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="welcome-msg">Chào mừng đến với TechMart!</div>
+                <div class="top-links">
+                    <a href="login.html"><i class="fas fa-user"></i> Đăng nhập</a>
+                    <a href="register.html"><i class="fas fa-user-plus"></i> Đăng ký</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-microchip" style="font-size: 2rem; color: #007bff;"></i>
+                    <span style="font-size: 1.6rem; font-weight: bold; color: #222;">TechMart</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-icons">
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+                    <li><a href="products.html"><i class="fas fa-box-open"></i> Sản phẩm</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> Tin tức</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Thanh toán -->
+    <main class="checkout-container" style="background: #f7f9fb; min-height: 70vh; padding: 50px 0;">
+        <div class="container">
+            <h1 class="cart-title" style="text-align:center; margin: 32px 0 24px 0; font-size:2rem; color:#222;">
+                <i class="fas fa-credit-card" style="color:#007bff"></i> Thanh toán đơn hàng
+            </h1>
+            <div class="checkout-grid" style="display: flex; gap: 40px; align-items: flex-start; justify-content: center; flex-wrap: wrap;">
+                <!-- Form thông tin khách hàng -->
+                <form class="checkout-form" style="flex:2; background:#fff; border-radius:16px; box-shadow:0 2px 16px rgba(0,0,0,0.06); padding:32px 24px; min-width:320px; max-width:600px;">
+                    <h3 style="color:#007bff; margin-bottom:18px;"><i class="fas fa-user"></i> Thông tin khách hàng</h3>
+                    <div class="form-group" style="margin-bottom:18px;">
+                        <label for="fullname">Họ và tên</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ và tên..." style="width:100%; padding:10px; border-radius:6px; border:1px solid #ddd;">
+                    </div>
+                    <div class="form-group" style="margin-bottom:18px;">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại..." style="width:100%; padding:10px; border-radius:6px; border:1px solid #ddd;">
+                    </div>
+                    <div class="form-group" style="margin-bottom:18px;">
+                        <label for="address">Địa chỉ nhận hàng</label>
+                        <input type="text" id="address" name="address" required placeholder="Nhập địa chỉ..." style="width:100%; padding:10px; border-radius:6px; border:1px solid #ddd;">
+                    </div>
+                    <div class="form-group" style="margin-bottom:18px;">
+                        <label for="note">Ghi chú (tuỳ chọn)</label>
+                        <textarea id="note" name="note" rows="3" placeholder="Ghi chú cho đơn hàng..." style="width:100%; padding:10px; border-radius:6px; border:1px solid #ddd;"></textarea>
+                    </div>
+                    <h3 style="color:#007bff; margin:24px 0 12px 0;"><i class="fas fa-money-check-alt"></i> Phương thức thanh toán</h3>
+                    <div class="form-group" style="margin-bottom:18px;">
+                        <label><input type="radio" name="payment" value="cod" checked> Thanh toán khi nhận hàng (COD)</label>
+                    </div>
+                    <div class="form-group" style="margin-bottom:18px;">
+                        <label><input type="radio" name="payment" value="bank"> Chuyển khoản ngân hàng</label>
+                    </div>
+                    <div class="form-group" style="margin-bottom:18px;">
+                        <label><input type="radio" name="payment" value="momo"> Ví MoMo</label>
+                    </div>
+                    <button type="submit" class="btn" style="background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%); color:#fff; border:none; border-radius:8px; padding:14px 0; font-size:1.1rem; font-weight:600; width:100%; margin-top:18px; cursor:pointer;">
+                        <i class="fas fa-check-circle"></i> Xác nhận đặt hàng
+                    </button>
+                    <div class="form-message" style="margin-top:16px; color: #10b981; font-weight: 500; display:none;"></div>
+                </form>
+                <!-- Tóm tắt đơn hàng -->
+                <div class="cart-summary" style="flex:1; background:#fff; border-radius:16px; box-shadow:0 2px 16px rgba(0,0,0,0.06); padding:32px 24px; min-width:260px; max-width:340px; height:fit-content;">
+                    <h3 style="color:#007bff; margin-bottom:18px;">Tóm tắt đơn hàng</h3>
+                    <div class="summary-products"></div>
+                    <div class="summary-row" style="display:flex; justify-content:space-between; margin-top:18px;">
+                        <span>Tạm tính:</span>
+                        <span class="summary-subtotal">0đ</span>
+                    </div>
+                    <div class="summary-row total" style="display:flex; justify-content:space-between; font-weight:bold; color:#e53935; font-size:1.15rem; margin-top:8px; border-top:1px solid #eee; padding-top:12px;">
+                        <span>Tổng cộng:</span>
+                        <span class="summary-total">0đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-col">
+                    <h3>Về chúng tôi</h3>
+                    <p>TechMart - Địa chỉ mua sắm công nghệ tin cậy</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên kết</h3>
+                    <ul>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                        <li><a href="news.html">Tin tức</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="policy.html">Chính sách</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Vận chuyển</a></li>
+                        <li><a href="return.html">Đổi trả</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Đường Phan Văn Trị, Hồ Chí Minh</p>
+                    <p><i class="fas fa-phone"></i> 0123.456.789</p>
+                    <p><i class="fas fa-envelope"></i> info@techmart.vn</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TechMart. Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+        const summaryProducts = document.querySelector('.summary-products');
+        const summarySubtotal = document.querySelector('.summary-subtotal');
+        const summaryTotal = document.querySelector('.summary-total');
+        const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.querySelectorAll('.cart-count').forEach(el => el.innerText = cartCount);
+
+        let html = '';
+        let subtotal = 0;
+        cart.forEach(item => {
+            // Loại bỏ ký tự không phải số (kể cả dấu chấm, đ)
+            let price = Number(String(item.price).replace(/[^\d]/g, ''));
+            let total = price * item.quantity;
+            subtotal += total;
+            html += `
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                    <img src="${item.img}" alt="${item.name}" style="width:48px; height:48px; object-fit:cover; border-radius:8px; border:1px solid #eee;">
+                    <div style="flex:1;">
+                        <div style="font-weight:600; color:#222;">${item.name}</div>
+                        <div style="font-size:0.97rem; color:#666;">SL: ${item.quantity} x ${price.toLocaleString('vi-VN')}đ</div>
+                    </div>
+                    <div style="font-weight:600; color:#007bff;">${total.toLocaleString('vi-VN')}đ</div>
+                </div>
+            `;
+        });
+        summaryProducts.innerHTML = html || '<div style="color:#888; text-align:center;">Không có sản phẩm nào.</div>';
+        summarySubtotal.innerText = subtotal.toLocaleString('vi-VN') + 'đ';
+        summaryTotal.innerText = subtotal.toLocaleString('vi-VN') + 'đ';
+    });
+
+    // Xử lý gửi đơn hàng (giả lập)
+    document.querySelector('.checkout-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Xử lý gửi đơn hàng ở đây (gửi lên server thực tế)
+        localStorage.removeItem('cart');
+        const msg = document.querySelector('.form-message');
+        msg.innerHTML = `
+            <span style="font-size:1.5rem; color:#10b981; vertical-align:middle;">🎉</span>
+            <span style="font-size:1.15rem; color:#222; font-weight:600; margin-left:8px;">Đặt hàng thành công!</span>
+            <br>
+            <span style="color:#007bff;">Cảm ơn bạn đã mua sắm tại <b>TechMart</b>.</span>
+        `;
+        msg.style.display = "block";
+        msg.style.background = "#e6fff2";
+        msg.style.borderRadius = "8px";
+        msg.style.padding = "16px";
+        msg.style.textAlign = "center";
+        msg.style.marginTop = "18px";
+        msg.style.boxShadow = "0 2px 8px rgba(16,185,129,0.08)";
+        // Cập nhật lại số lượng giỏ hàng
+        document.querySelectorAll('.cart-count').forEach(el => el.innerText = '0');
+        // Cuộn lên đầu trang
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        // Có thể reset form nếu muốn
+        this.reset();
+    });
+    </script>
+</body>
+</html>
